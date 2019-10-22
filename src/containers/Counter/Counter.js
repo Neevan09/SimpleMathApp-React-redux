@@ -31,13 +31,18 @@ class Counter extends Component {
         return (
             <div>
                 <CounterOutput value={this.props.ctr} />
+
+                <hr />
+                    <h2> Click on the button to perform the operation </h2>
+                <hr />
+
                 <CounterControl label="Increment" clicked={this.props.onIncrementCounter} />
                 <CounterControl label="Decrement" clicked={this.props.onDecrementCounter} />
                 <CounterControl label="Add 10" clicked={this.props.onAddCounter} />
                 <CounterControl label="Subtract 10" clicked={this.props.onSubtractCounter} />
 
                 <hr />
-                Click Store Button to store the result...
+                    <h2>Click Store Button to store the result</h2>
                 <hr />
 
                 <button className="CounterControl" onClick={this.props.onStoreResult}>Store Result</button>
@@ -49,7 +54,7 @@ class Counter extends Component {
                     </ul>
                 </div>
                 <hr />
-                    Click on the stored value to delete the values...
+                <h2>Click on the stored value to delete the values</h2>
                 <hr />
             </div>
         );
